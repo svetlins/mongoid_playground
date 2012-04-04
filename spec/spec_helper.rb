@@ -29,4 +29,12 @@ RSpec.configure do |config|
   # automatically. This will be the default behavior in future versions of
   # rspec-rails.
   config.infer_base_class_for_anonymous_controllers = false
+
+  config.backtrace_clean_patterns = [
+                                     # /\/lib\d*\/ruby\//,
+                                     # /bin\//,
+                                     #/gems/,
+                                     # /spec\/spec_helper\.rb/,
+                                     # /lib\/rspec\/(core|expectations|matchers|mocks)/
+                                    ]
 end
